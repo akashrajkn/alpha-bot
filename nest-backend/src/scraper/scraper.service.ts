@@ -2,18 +2,17 @@ import { Injectable } from '@nestjs/common';
 
 import axios from 'axios';
 import { load } from 'cheerio';
-import fetch, { ScrapeConfig } from '@web-master/node-web-fetch';
+// import fetch, { ScrapeConfig } from '@web-master/node-web-fetch';
 
-// import { dummyHTML } from '../data/dummy-html';
 import { SYMPTOMS_URL, STOP_WORDS } from 'src/constants';
 
 
 @Injectable()
 export class ScraperService {
 
-    async fetch<T>(config: ScrapeConfig): Promise<T> {
-        return fetch<T>(config);
-    }
+    // async fetch<T>(config: ScrapeConfig): Promise<T> {
+    //     return fetch<T>(config);
+    // }
 
     async fetchHtml(url: string): Promise<string> {
 
